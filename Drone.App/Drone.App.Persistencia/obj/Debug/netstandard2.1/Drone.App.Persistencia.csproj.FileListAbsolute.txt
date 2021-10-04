@@ -1,0 +1,11 @@
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\obj\Debug\netstandard2.1\Drone.App.Persistencia.csprojAssemblyReference.cache
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\obj\Debug\netstandard2.1\Drone.App.Persistencia.AssemblyInfoInputs.cache
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\obj\Debug\netstandard2.1\Drone.App.Persistencia.AssemblyInfo.cs
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\bin\Debug\netstandard2.1\Drone.App.Persistencia.deps.json
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\bin\Debug\netstandard2.1\Drone.App.Persistencia.dll
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\bin\Debug\netstandard2.1\Drone.App.Persistencia.pdb
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\bin\Debug\netstandard2.1\Drone.App.Dominio.dll
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\bin\Debug\netstandard2.1\Drone.App.Dominio.pdb
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\obj\Debug\netstandard2.1\Drone.App.Persistencia.csproj.CopyComplete
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\obj\Debug\netstandard2.1\Drone.App.Persistencia.dll
+C:\TheDroneProject\Drone.App\Drone.App.Persistencia\obj\Debug\netstandard2.1\Drone.App.Persistencia.pdb

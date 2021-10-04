@@ -1,0 +1,78 @@
+﻿@page
+@model Drone.App.Frontend.Pages.loginEmpresaModel
+@{
+}
+
+ <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    
+	<title>Login Empresa  </title>
+  </head>
+  <body>
+  
+     <style>
+        .custom_form{
+
+         background-color: rgb(250, 200, 250);
+         padding: 35px;
+         margin: 15px;
+            
+        }
+
+        h1{
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        .DroneLogo{
+
+            padding-left: 10px;
+        }
+        
+
+    </style>
+  
+    
+    	<div class="container">
+		
+			<div class ="col">		
+				<h2 class="fw-bold text-center ">Usuario Empresarial</h2>
+
+<!--LOGIN -->
+
+			<form action="#">
+
+				<div class="mb-4">
+					<label for="email" class="form-label">Nombre de usuario </label>
+					<input type="email" class="form-control" name="usuarioadm">
+				</div>
+				
+				<div class="mb-4">
+					<label for="password" class="form-label">Contraseña </label>
+					<input type="password" class="form-control" name="pass">
+				</div>
+					
+				<div class="mb-4 form-check">
+					<input type="checkbox" name="connected" class="form-check-input" <label for="connected" class="form-check-label"> Mantenerme conectado</label>
+				</div>
+			
+				<div class="">
+
+					<button type="submit" asp-page="/DroneViews/opcionesEmpresa" class="btn btn-primary">Iniciar Sesión</button> </div>
+					<div class="my-3">
+					<span><a href="#">Recuperar Password</a></span>
+
+				</div>
+			
+			</form>
+			
+			</div>
+		</
+	
+	
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  </body>

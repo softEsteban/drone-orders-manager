@@ -1,0 +1,127 @@
+﻿@page
+@model Drone.App.Frontend.Pages.asignarPedidosModel
+@{
+}
+
+<head>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-     F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-           Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+</head>
+<body>
+
+    <style>
+        .custom_form{
+
+         background-color: rgb(250, 250, 250);
+         padding: 35px;
+         margin: 15px;
+            
+        }
+
+        h1{
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        .DroneLogo{
+
+            padding-left: 10px;
+        }
+        
+
+    </style>
+
+<div class="row">
+<!-- Form for register encargado -->
+
+    <form class= "custom_form col-md-4" id= "registerForm">
+                
+        <div>
+            <h1>Registro de encargados</h1>
+        </div>
+
+        <div class="mb-3">
+            <label for="name" class="forml-label">Nombre</label>
+            <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="last_name" class="forml-label">Apellido</label>
+            <input type="name" class="form-control" id="last_name" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="phone_number" class="forml-label">Cédula</label>
+            <input type="name" class="form-control" id="phone_number" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="phone_number" class="forml-label">Teléfono</label>
+            <input type="name" class="form-control" id="phone_number" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="street_direction" class="form-label">Ciudad</label>
+            <input type="email" class="form-control" id="city-name" aria-describedby="emailHelp">
+          </div>
+          
+        
+        
+          <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            <div id="passwordHelpBlock" class="form-text">
+            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </div>
+
+            
+          </div>
+
+          <a  class="btn btn-primary" asp-page="/DroneViews/**" >Registrar</a>
+      </form>
+    
+    
+        
+<!-- asignar pedido -->
+
+    <form class= "custom_form col-md-4" id= "registerForm">
+
+            
+        <h1>Asignación de Pedido</h1>
+   
+            <div class="mb-3">
+                <label for="validarTema">Seleccione el Encargado:<span class="red">*</span></label>
+                <select class="custom-select" id="validarTema" name="validarTema" required>
+                    <option selected disabled value="">Selecciona...</option>
+                    <option value="Problema con acceso a Web">Falcao García</option>
+                    <option value="Propuesta de colaboración">James Rodriguez</option> 
+                    <option value="Propuesta de colaboración">Luis Díaz</option> 
+                </select>
+            </div>  
+        
+            <div class="mb-3">
+                <label for="validarTema">Seleccione el Pedido:<span class="red">*</span></label>
+                <select class="custom-select" id="validarTema" name="validarTema" required>
+                    <option selected disabled value="">Selecciona...</option>
+                    <option value="Problema con acceso a Web">Pedido N02003</option>
+                    <option value="Propuesta de colaboración">Pedido N02005</option>     
+                </select>
+            </div>  
+            
+            <button type="submit" class="btn btn-primary">Asignar Pedido</button>
+            
+    </form>
+
+</div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>

@@ -1,0 +1,70 @@
+﻿@page
+@model Drone.App.Frontend.Pages.opcionesEmpresaModel
+@{
+}
+
+    <head>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    </head>
+    <body>
+    
+        <style>
+            .custom_con{
+                margin: 40px;
+            }
+    
+            .custom_con>div{
+    
+                margin: 15px;
+                height: auto;
+                border-radius: 10px;
+    
+            }
+    
+    
+            h1{
+                margin: 30px;
+                font-size: 40px;
+    
+            }
+    
+            .card:hover{
+    
+                cursor: hand;
+                
+            }
+        </style>
+        
+        <div>
+            <h1>Opciones de empresa</h1>
+        </div>
+    
+    
+        <container class="custom_con row align-items-center ">
+    
+        
+            <div class="card col-sm-10 col-md-6 col-lg-3">
+                <h5 class="card-header">Asignar encargados a pedidos</h5>
+                <div class="card-body">
+                <p class="card-text">Asigna un encargado a cada pedido para que realice el registro de estados del pedido</p>
+                <a asp-page="/DroneViews/asignarPedidos" class="btn btn-primary">Asociar</a>
+                </div>
+            </div>
+    
+            <div class="card col-sm-10 col-md-6 col-lg-3">
+                <h5 class="card-header">Consultar todo el historial</h5>
+                <div class="card-body">
+                <p class="card-text">Con tu perfil de empresa puedes acceder a los detalles de cada uno de los pedidos, además de usar filtros para encontrarlos y analizarlos.</p>
+                <a asp-page="/DroneViews/historialCliente" class="btn btn-primary">Consultar</a>
+                </div>
+            </div>
+            
+        </container>
+    
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    </body>

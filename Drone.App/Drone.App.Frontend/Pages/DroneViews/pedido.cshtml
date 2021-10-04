@@ -1,0 +1,118 @@
+﻿@page
+@model Drone.App.Frontend.Pages.pedidoModel
+@{
+}
+
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+
+    <style>
+        .custom_form{
+
+         background-color: rgb(250, 250, 250);
+         padding: 35px;
+         margin: 15px;
+            
+        }
+
+        h1{
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        .DroneLogo{
+
+            padding-left: 10px;
+        }
+        
+
+    </style>
+
+
+<!-- Pedidos -->
+<div class="row justify-content-center">
+
+    <form class="row g-3">
+        <div class="col-12">
+            <h1>Pedidos</h1>
+        </div>
+        <div class="col-md-3">
+                <label for="inputState" class="form-label">Productos</label>
+                <select id="inputState" class="form-select">
+                <option selected>Seleccione los productos</option>
+                <option value="1">Producto #1</option>
+                <option value="2">Producto #2</option>
+                <option value="3">Producto #3</option>
+                </select>
+        </div>
+            <div class="col-md-3">
+                <label for="inputState" class="form-label">Cantidad</label>
+                <input class="form-control form-control-sm" type="text" placeholder="Digite la cantidad" aria-label=".form-control-sm example">
+        </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Agregar a la lista</button>
+        </div>
+    </form>
+
+<!-- tabla -->
+
+    <div class="table-responsive row g-3 gap-2 col-md-10 mx-auto"> 
+        <table class="table table-secondary table-striped col-md-2 order-1" id= "resumenTable">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio unitario</th>
+                <th scope="col">Total</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>CPU ROG 2451</td>
+            <td>1</td>
+            <td align="right">2.500.000</td>
+            <td align="right">2.500.000</td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Ratón inalámbrico</td>
+            <td>2</td>
+            <td align="right">40.000</td>
+            <td align="right">80.000</td>
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Laptop HP 15</td>
+            <td>1</td>
+            <td align="right">2.500.000</td>
+            <td align="right">2.500.000</td>
+            </tr>
+            <tr>
+            <th scope="row">Total</th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td align="right">5.080.000</td>
+            </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+
+
+
+	<div class="d-grid gap-3 col-5 d-md-flex justify-content-md-center">
+        <button type="button" class="btn btn-primary">Confirmar pedido</button>
+        <button type="button" class="btn btn-primary">Eliminar pedido</button>
+	</div>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	
+</body>

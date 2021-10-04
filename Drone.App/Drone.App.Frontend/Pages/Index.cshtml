@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    .roleLink{
+        font-weight: bold;
+        text-underline-offset: unset;
+        color: black;
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenidxs a Drone of the Future</h1>
+    <p>Aquí puedes administrar tus datos e información como admin, encargado y cliente.</p>
+    <p>Escoge <a class="roleLink" asp-page="/DroneViews/rolesPage" >tu rol </a>para que puedas ingresar.</p>
+</div>
